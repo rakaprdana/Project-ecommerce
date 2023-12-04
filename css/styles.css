@@ -69,6 +69,23 @@ section {
     border: var(--border-hover);
 }
 
+.btn1{
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    border: .2rem;
+    border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    color: white;
+    background: #e87510;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.btn1:hover{
+    border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    border: .2rem;
+    color: black;
+}
 /* HEADER */
 
 .header {
@@ -132,6 +149,10 @@ section {
 .home .content {
     flex: 1 1 42rem;
     color: white;
+}
+
+.home h2{
+    font-size: 25px;
 }
 
 @keyframes float {
@@ -259,7 +280,7 @@ section {
 }
 
 .menu .box-container .box img {
-    height: 8rem;
+    height: 10rem;
     margin-left: -6rem;
     border-radius: 8px;
 }
