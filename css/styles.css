@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root {
-    --main-color:#443;
+    --main-color:rgb(99, 99, 97);
     --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
     --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
     --border: .2rem solid var(--main-color);
@@ -57,7 +57,7 @@ section {
     padding: .9rem 1.5rem;
     border: var(--border);
     border-radius: var(--border-radius);
-    color: var(--main-color);
+    color:var(--main-color);
     background: none;
     cursor: pointer;
     margin-top: 1rem;
@@ -119,7 +119,6 @@ section {
     background: url("/assets/sample.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
 }
 
 .home {
@@ -149,7 +148,7 @@ section {
 
 .home .content h3 {
     font-size: 6.5rem;
-    color: var(--main-color);
+    color: white;
     text-transform: uppercase;
 }
 
@@ -262,6 +261,7 @@ section {
 .menu .box-container .box img {
     height: 8rem;
     margin-left: -6rem;
+    border-radius: 8px;
 }
 
 .menu .box-container .box .content h3 {
