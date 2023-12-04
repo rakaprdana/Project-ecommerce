@@ -3,75 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>KOPITARA - My Coffee Shop</title>
 </head>
 <body>
-    <header>
-        <div id="judul">Kopitara<br>
-             Coffee House
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#menu">MENU</a></li>
-                <li><a href="#desc">ABOUT US</a></li>   
-                <li><a href="#locations">CONTACT US</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="hero">
-        <h1>Kopitara <br>
-            Coffee House
-        </h1>
-        <p>Have a sip, survive the work week</p>
-    </section>
-
-    <section id="desc">
-        <img src="/assets/sample2.jpg" alt="sample">
-        <div class="textbox">
-            <h2>Your coffee</h2>
-            <h3>The experts are here to save the day</h3>
-            <p>The word "Kopitara" can be a combination of the word "Kopi" (coffee) and exotic 
-                or mystical elements, so it can create an impression of 
-                magic and adventure in serving coffee. You can also serve 
-                various types of coffee from various parts of the world, so that customers feel 
-                like they are exploring the world through the taste of the coffee served. Apart from that, 
-                "Kopitara Cafe" can offer a relaxed and friendly atmosphere, where customers can feel like they are on a coffee journey 
-                full of mystery, beauty and enjoyment.</p>
+   <header class="heade">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#" class="logo">Kopitara <br> 
+        Coffee House<i class="fas fa-mug-hot"></i></a>
+    <nav class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#menu">MENU</a>
+        <a href="#book">BOOK</a>
+    </nav>
+    <a href="#" class="btn">Book a Table</a>
+   </header>
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Fresh Coffee In The Morning</h3>
+            <h2>Kopitara Coffee House</h2>
+            <a href="#" class="btn">Buy One Now</a>
         </div>
     </section>
+<!-- ABOUT -->
+    <section class="about" id="about">
+        <h1 class="heading">About us <span>Why Choose us</span></h1>
 
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <div class="menu-item">
-            <img src="/assets/menu1.jpg" alt="Coffee 1">
-            <h3>Espresso</h3>
-            <p>Strong and bold</p>
-            <p class="price">Rp. 12.000,00</p>
+        <div class="row">
+            <div class="image">
+                <img src="/assets/sample2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">the experts are here to save the day</h3>
+                <p>The word "Kopitara" can be a combination of the word "Kopi" (coffee) and exotic or mystical elements, 
+                    so it can create an impression of magic and adventure in serving coffee. 
+                    You can also serve various types of coffee from various parts of the world, so that customers feel like 
+                    they are exploring the world through the taste of the coffee served. Apart from that, 
+                    "Kopitara Cafe" can offer a relaxed and friendly atmosphere, where customers can feel like they are on a coffee journey full of mystery, 
+                    beauty and enjoyment.</p>
+                <a href="#" class="btn">Read More</a>
+                <div class="icons-container">
+                    <div class="icons">
+                        <img src="/assets/about-icon-1.png" alt="">
+                        <h3>Quality Coffee</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="/assets/about-icon-2.png" alt="">
+                        <h3>Our Branches</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="/assets/about-icon-3.png" alt="">
+                        <h3>Free Delivery</h3>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="menu-item2">
-            <img src="/assets/menu2.jpg" alt="Donut">
-            <h3>Donut</h3>
-            <p>....</p>
-            <p class="price2">Rp. 3.000,00/pcs</p>
+    </section>
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h1 class="heading">Our menu <span>Popular Menu</span></h1>
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="/assets/menu1.jpg" alt="">
+                <div class="content">
+                    <h3>Espresso</h3>
+                    <p>DESC</p>
+                    <span>Rp. 12.000,00</span>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <img src="/assets/menu2.jpg" alt="">
+                <div class="content">
+                    <h3>Dounat</h3>
+                    <p>DESC</p>
+                    <span>Rp. 3.000,00/pcs</span>
+                </div>
+            <!-- ANOTHER MENU -->
         </div>
     </section>
 
-    <section id="locations">
-        <h2>Our Locations</h2>
-        <p>Visit our coffee shops in these locations:</p>
-        <ul>
-            <li>Jakarta</li>
-            <li>Bandung</li>
-            <li>Surabaya</li>
-            <!-- Add more locations as needed -->
-        </ul>
-    </section>
+<!-- BOOK -->
 
-    <footer>
-        <p>&copy; 2023 KOPITARA - My Coffee Shop. All rights reserved.</p>
-    </footer>
+    <section class="book" id="book">
+        <h1 class="heading">Booking <span>Reserve a Table</span></h1>
+
+        <form action="">
+            <input type="text" placeholder="Name" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="number" placeholder="Number" class="box">
+            <textarea name="" placeholder="Message" class="box" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+    </section>
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Our Branches</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i>Pondok Gede</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Jakarta Timur</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Bekasi Barat</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i>HOME</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i>ABOUT</a>
+                <a href="#menu"><i class="fas fa-arrow-right"></i>MENU</a>
+                <a href="#book"><i class="fas fa-arrow-right"></i>BOOK</a>
+            </div>
+            <div class="box">
+                <a href="#"><i class="fas fa-phone"></i>0812-3456-7890</a>
+                <a href="#"><i class="fas fa-envelope"></i>kopitaracafe@gmail.com</a>
+                <a href="#"><i class="fas fa-envelope"></i>Ruko Cluster Mangga 2 no. 12 , Bekasi Regenci, Kota Bekasi</a>
+            </div>
+            <div class="box">
+                <a href="#"><i class="fas fa-instagram"></i> @kopitaracafe_</a>
+                <a href="#"><i class="fas fa-twitter"></i> @kopitaracafe_</a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
