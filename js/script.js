@@ -39,3 +39,11 @@ var swiper = new Swiper(".review-slider", {
         }
     },
 });
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup.classList.add("open-popup");
+}

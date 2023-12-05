@@ -139,7 +139,7 @@ section {
 .home {
     min-height: 100vh;
     padding-top: 12rem;
-    background: url("/assets/sample.jpg") no-repeat;
+    background: url("/ecommerce/images/bg.jpg") no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -257,7 +257,7 @@ section {
 /* MENU */
 
 .menu {
-    background: url("/assets/menu-bg.jpg") no-repeat;
+    background: url("/ecommerce/images/menu-bg.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     padding-bottom: 28%;
@@ -315,7 +315,7 @@ section {
 /* BOOK */
 
 .book {
-    background: url("/assets/book-bg.jpg");
+    background: url("/ecommerce/images/book-bg.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -348,6 +348,31 @@ section {
     height: 15rem;
     resize: none;
 }
+
+/* SEND */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.btn-popup{
+    padding: 10px 60px;
+    background: #e87510;
+    color: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    box-shadow: 0.5px 5px rgb(0, 0, 0, 0.2);
+}
+
+
+
+
 
 .footer .box-container {
     display: grid;
