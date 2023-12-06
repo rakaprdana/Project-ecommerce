@@ -48,6 +48,6 @@ document.getElementById('openPopupBtn').addEventListener('click', function() {
     // Mengatur waktu durasi munculnya pop-up (misalnya, 5 detik)
     setTimeout(function() {
         document.getElementById('popup').style.display = 'none';
-    }, 5000); // Mengatur waktu durasi dalam milidetik (5 detik dalam contoh ini)
+    }, 3000); // Mengatur waktu durasi dalam milidetik (5 detik dalam contoh ini)
 });
 

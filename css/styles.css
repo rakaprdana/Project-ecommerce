@@ -17,7 +17,7 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all .2s linear;
+    transition: all .5s linear;
 }
 
 html {
@@ -62,11 +62,13 @@ section {
     cursor: pointer;
     margin-top: 1rem;
     font-size: 1.7rem;
+    transition: .2s linear;
 }
 
 .btn:hover {
     border-radius: var(--border-radius-hover);
     border: var(--border-hover);
+    transition: .2s linear;
 }
 
 .btn1{
@@ -115,12 +117,14 @@ section {
     margin: 0 1rem;
     font-size: 1.7rem;
     color: var(--main-color);
+    
 }
 
 .header .navbar a:hover{
     margin: 0 1rem;
     font-size: 1.7rem;
     color: #e87510;
+    transition: .2s linear;
     
 }
 .header .btn {
