@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/twitter.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
     <link rel="website icon" type="png" href="/ecommerce/images/logo.png">
-    <link rel="stylesheet" href="/ecommerce/css/style.css">
+    <link rel="stylesheet" href="/ecommerce/css/styles.css">
     <title>KOPITARA - Coffee House</title>
 </head>
 <body>
@@ -147,8 +147,9 @@
             <a href="#" class="box" data-aos="fade-up">
                 <img src="/ecommerce/images/toast-egg.jpg" alt="">
                 <div class="content">
-                    <h3>Toast Egg</h3>
-                    <p>DESC</p>
+                    <h3>Sunny Side Up Toast Egg</h3>
+                    <p>Sunny Side Up Toast Egg - where every bite is an adventure to egg perfection! Picture this: crispy toast, with a soft cow's eye egg on top. The egg turmeric 
+                        that flows when you poke it with a fork, creates a delicious blend of flavors between bread and egg.</p>
                     <span>Rp. 15.000,00</span>
                 </div>
             </a>
@@ -158,20 +159,26 @@
 
 <!-- BOOK -->
 
-    <section class="book" id="book">
+    <section class="book" id="book" >
         <h1 class="heading">Booking <span>Reserve a Table</span></h1>
 
-        <form action="/ecommerce/php/process_input.php" method="post">
-            <input type="text" name="name" placeholder="Name" class="box">
-            <input type="email" name="email" placeholder="Email" class="box">
-            <input type="number" name="number" placeholder="Number" class="box">
-            <textarea name="message" placeholder="Message" class="box" cols="30" rows="10"></textarea>
-            <button type="submit" class="btn-popup">SEND</button>
+        <form action="/ecommerce/php/process_input.php" method="post" data-aos="fade-up">
+            <input type="text" name="name" placeholder="Name" class="box" required>
+            <input type="email" name="email" placeholder="Email" class="box" required>
+            <input type="number" name="number" placeholder="Number" class="box" required>
+            <textarea name="message" placeholder="Message" class="box" cols="30" rows="10" required></textarea>
+            <button type="submit" class="btn-popup" id="openPopupBtn">SEND</button>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <img src="/ecommerce/images/checklist.png" alt="checklist">
+                    <p>SUCCESS</p>
+                </div>
+            </div>
         </form>
     </section>
     <!-- FOOTER -->
     <section class="footer">
-        <div class="box-container">
+        <div class="box-container" data-aos="fade-up">
             <div class="box">
                 <h3>Our Branches</h3>
                 <a href="#"><i class="fas fa-arrow-right"></i>Pondok Gede</a>
@@ -201,6 +208,6 @@
     <script>
       AOS.init();
     </script>
-    <script src="/ecommerce/js/script.js"></script>
+    <script src="/ecommerce/js/scripts.js"></script>
 </body>
 </html>

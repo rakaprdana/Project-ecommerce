@@ -40,10 +40,14 @@ var swiper = new Swiper(".review-slider", {
     },
 });
 
-function openPopup(){
-    popup.classList.add("open-popup");
-}
+// POP UP
+document.getElementById('openPopupBtn').addEventListener('click', function() {
+    // Menampilkan pop-up
+    document.getElementById('popup').style.display = 'block';
 
-function closePopup(){
-    popup.classList.add("open-popup");
-}
+    // Mengatur waktu durasi munculnya pop-up (misalnya, 5 detik)
+    setTimeout(function() {
+        document.getElementById('popup').style.display = 'none';
+    }, 5000); // Mengatur waktu durasi dalam milidetik (5 detik dalam contoh ini)
+});
+
